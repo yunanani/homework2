@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/api/Training")
-@CrossOrigin(origins = ["http://localhost:3000"])
+@CrossOrigin(origins = ["https://superb-shortbread-7ed911.netlify.app"])
 class TrainingController(private val service: TrainingService) {
     @PostMapping
     fun addTraining(@RequestBody training: Training): Training = service.addTraining(training)
